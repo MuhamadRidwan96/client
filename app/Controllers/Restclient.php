@@ -47,9 +47,9 @@ class Restclient extends BaseController
 		//$data = [];
 		//$response = $client->request('DELETE',$url,['form_params'=>$data,'headers'=>$headers,//'http_errors'=>false]);
 		//echo $response->getBody();
-		
+
 		helper(['restclient']);
-		$url      ="http://localhost/Example-Api/public/stocks/";
+		$url      ="http://localhost/Example-Api/public/stocks";
 		$response = access_api('GET',$url,[]);
 		echo $response;
 		
