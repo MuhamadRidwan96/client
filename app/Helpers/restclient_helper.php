@@ -17,6 +17,8 @@ function access_api($method,$url,$data){
     $currentTime = time();
     if($exp <= $currentTime){
         $url = "http://localhost/Example-Api/public/auth";
+
+        
         $form_params = [
             'username' => 'Ridwan',
             'email'    => 'Ridwan@gmail.com',
